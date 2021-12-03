@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Gallery from './Gallery.jsx';
 import About from './About.jsx';
+import RSVP from './RSVP.jsx';
 
 const App = (props) => {
 
@@ -22,6 +23,7 @@ const App = (props) => {
       </div>
       {view === 'Gallery' && <div className='container'><Gallery /></div>}
       {view === 'About' && <div className='container'><About /></div>}
+      {view === 'RSVP' && <div className='container'><RSVP /></div>}
     </div>
   );
 }

@@ -5,9 +5,9 @@ const getPhotos = (req, res) => {
 
   const options = {
     method: 'get',
-    url: 'https://api.unsplash.com/photos',
+    url: 'https://api.unsplash.com/photos?per_page=30',
     headers: {
-      'Authorization': `Client-ID ${key.key}`
+      'Authorization': `Client-ID ${key.key}`,
     }
   };
 
