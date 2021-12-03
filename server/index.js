@@ -7,9 +7,13 @@ app.use(express.static(path.join(__dirname, "../client/dist")));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+const getPhotos = require('./getPhotos.js');
+
 app.get('/', (req, res) => {
   res.send('hello world')
 });
+
+app.get('/photos', getPhotos);
 
 app.listen(port, () => {
   console.log(`server listening on ${port}` );

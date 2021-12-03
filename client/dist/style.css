@@ -20,6 +20,11 @@
   margin-right: 150px;
 }
 
+.toolbar-btn:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   justify-content: center;
