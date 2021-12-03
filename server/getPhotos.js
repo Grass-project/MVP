@@ -3,9 +3,17 @@ const key = require('../config.js');
 
 const getPhotos = (req, res) => {
 
-  const ep = `https://api.unsplash.com/photos/?client_id=${key.key}`;
-  axios.get(ep)
+  const options = {
+    method: 'get',
+    url: 'https://api.unsplash.com/photos',
+    headers: {
+      'Authorization': `Client-ID ${key.key}`
+    }
+  };
+
+  axios(options)
   .then((data) => {
+
     res.send(data.data);
   })
   .catch(err => {

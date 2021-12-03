@@ -33,3 +33,26 @@
 footer {
   text-align: center;
 }
+
+/* Gallery's style */
+
+.image {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pic {
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.pic:hover {
+  height: 420px;
+  width: 420px;
+  cursor: pointer;
+}
