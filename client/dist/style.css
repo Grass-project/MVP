@@ -1,0 +1,30 @@
+
+
+/* app's style */
+.frame {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.title {
+  text-align: center;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+}
+
+.toolbar-btn {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+}
