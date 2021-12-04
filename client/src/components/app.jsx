@@ -22,7 +22,7 @@ const App = (props) => {
       </div>
       <img className='logo' src='img/logo.png' />
       {view === 'Gallery' && <div className='container'><Gallery /></div>}
-      {view === 'About' && <div className='container'><About /></div>}
+      {view === 'About' && <About />}
       {view === 'RSVP' && <RSVP />}
     </div>
   );
