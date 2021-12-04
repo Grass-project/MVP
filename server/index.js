@@ -8,12 +8,18 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 const getPhotos = require('./getPhotos.js');
+const postRsvp = require('./postRsvp.js');
+const getRsvp = require('./getRsvp.js');
 
 app.get('/', (req, res) => {
   res.send('hello world')
 });
 
 app.get('/photos', getPhotos);
+
+app.get('/rsvp', getRsvp);
+
+app.post('/rsvp', postRsvp);
 
 app.listen(port, () => {
   console.log(`server listening on ${port}` );

@@ -24,7 +24,7 @@ const App = (props) => {
       </div>
       {view === 'Gallery' && <div className='container'><Gallery /></div>}
       {view === 'About' && <div className='container'><About /></div>}
-      {view === 'RSVP' && <div className='container'><RSVP /></div>}
+      {view === 'RSVP' && <RSVP />}
     </div>
   );
 }
