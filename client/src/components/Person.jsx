@@ -14,7 +14,10 @@ const Person = (props) => {
 
   const remove = (id) => {
     axios.delete('/rsvp', {params: {id: id}})
-    .then(() => console.log('removed'))
+    .then(() => {
+      console.log('removed')
+      setOption(false);
+    })
     .catch(err => console.log('not removed', err));
   }
 

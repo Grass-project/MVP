@@ -54,7 +54,10 @@ const RSVP = (props) => {
     e.preventDefault();
 
     axios.post('/rsvp', input)
-      .then(() => console.log('post rsvp ok'))
+      .then(() => {
+        console.log('post rsvp ok');
+        alert('Your request has been received.');
+      })
       .catch((err) => console.log('rsvp err', err));
   }
 

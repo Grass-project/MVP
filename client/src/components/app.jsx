@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Gallery from './Gallery.jsx';
 import About from './About.jsx';
 import RSVP from './RSVP.jsx';
+import QA from './Q&A.jsx';
 
 const App = (props) => {
 
@@ -24,6 +25,7 @@ const App = (props) => {
       {view === 'Gallery' && <div className='container'><Gallery /></div>}
       {view === 'About' && <About />}
       {view === 'RSVP' && <RSVP />}
+      {view === 'Q&A' && <QA />}
     </div>
   );
 }

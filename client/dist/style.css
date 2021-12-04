@@ -3,6 +3,12 @@ h2, h3, p, span {
   font-size: 20px;
 }
 
+footer {
+  position:-webkit-sticky;
+  bottom: 0;
+
+}
+
 /* app's style */
 .frame {
   margin-right: 200px;
@@ -73,7 +79,7 @@ footer {
 
 /* About Page */
 .about {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .about-title {
@@ -135,6 +141,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  min-height: 700px;
 }
 
 .update-c {
@@ -198,4 +205,21 @@ footer {
 .btn:hover {
   cursor: pointer;
   font-weight: bolder;
+}
+
+/* question's style */
+
+.question {
+  text-align: center;
+  min-height: 500px;
+}
+
+.q {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.reminder {
+  font-size: 15px;
+  color: grey;
 }
