@@ -13,7 +13,7 @@ const Gallery = (props) => {
 
       for (let img of data.data) {
         let obj = {};
-        obj.full = img.urls.full;
+        obj.full = img.urls.regular;
         obj.small = img.urls.small;
         // obj.description = img.alt_description;
         gallery.push(obj);

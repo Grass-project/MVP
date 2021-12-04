@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ImageModal from './imageModal.jsx';
 
 const Image = (props) => {
 
+  const [modal, setModal] = useState (false);
+
+  const openModal = () => {
+    setModal(true);
+  }
+
+  const closeModal = () => {
+    setModal(false);
+  }
+
   return (
-    <img className='pic' src={props.img.small}/>
+    <div>
+    <img onClick={openModal} className='pic' src={props.img.small}/>
+    {modal && <ImageModal img={props.img.full} close={closeModal} />}
+    </div>
   )
 }
 
