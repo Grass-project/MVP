@@ -28,7 +28,6 @@ const save = (input) => {
     } else {
       console.log('save ok')
     }
-    return data;
   });
 
 }
@@ -39,7 +38,19 @@ const read = () => {
   .exec();
 }
 
+const remove = (id) => {
+
+  rsvp.findOneAndDelete({_id: id}, (err, data) => {
+    if (err) {
+      console.log(err)
+    } else {
+      console.log('deleted')
+    }
+  })
+}
+
 module.exports = {
   save: save,
-  read: read
+  read: read,
+  remove: remove
 }

@@ -14,14 +14,13 @@ const App = (props) => {
 
   return (
     <div className='frame'>
-      <img className='logo' src='img/logo.png' />
-      {/* <h2 className='title'>blog title</h2> */}
       <div className='toolbar'>
         <span onClick={() => viewChanger('Gallery')} className='toolbar-btn'>Gallery </span>
         <span onClick={() => viewChanger('About')} className='toolbar-btn'>About </span>
         <span onClick={() => viewChanger('RSVP')} className='toolbar-btn'>RSVP </span>
         <span onClick={() => viewChanger('Q&A')} className='toolbar-btn'>Q&A </span>
       </div>
+      <img className='logo' src='img/logo.png' />
       {view === 'Gallery' && <div className='container'><Gallery /></div>}
       {view === 'About' && <div className='container'><About /></div>}
       {view === 'RSVP' && <RSVP />}

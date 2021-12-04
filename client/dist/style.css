@@ -26,7 +26,7 @@ h2, h3, p, span {
   height: 50px;
   width: auto;
   align-items: center;
-  background-color: whitesmoke;
+
 }
 
 .toolbar-btn {
@@ -90,12 +90,16 @@ footer {
 .inputsmall {
   width: 90%;
   height: 20px;
-
+  border: none;
+  border-bottom: solid 1px;
+  background-color: whitesmoke;
 }
 
 .inputlarge {
   width: 90%;
   height: 300px;
+  border: none;
+  border-bottom: solid 1px;
 
 }
 
@@ -107,7 +111,21 @@ footer {
   justify-content: space-around;
 }
 
+.update-c {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
 
+.update {
+  font-size: 12px;
+  color: grey;
+}
+
+.update:hover {
+  cursor: pointer;
+}
 
 /* modal */
 
@@ -147,7 +165,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   width: 200px;
-  height: 80px;
+  height: 50px;
   margin-top: 50px;
 }
 

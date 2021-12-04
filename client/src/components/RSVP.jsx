@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Person from './Person.jsx';
 import axios from 'axios';
 
 const RSVP = (props) => {
@@ -61,7 +62,7 @@ const RSVP = (props) => {
     <div className='rsvp-container'>
       <div className='list'>
         <h3>Waiting List</h3>
-        {list.map((person, index) => <p key={index}>{person.name}</p>)}
+        {list.map((person, index) => <Person person={person} key={index} />)}
       </div>
       <div className='form'>
         <h3>Got a pro project in mind? Connect with me with the form below</h3>
@@ -73,7 +74,7 @@ const RSVP = (props) => {
           <p>Intended date *</p>
           <input className='inputsmall' type="date" onChange={dateChanger} id="date" name="datea" required />
           <p>Tell me a about your project *</p>
-          <input className='inputlarge' onChange={ideaChanger} type='text' placeholder='Your wonderful ideas' required />
+          <input className='inputsmall' onChange={ideaChanger} type='text' placeholder='Your wonderful ideas' required />
           <br></br>
           <button className='btn'>submit</button>
         </form>
